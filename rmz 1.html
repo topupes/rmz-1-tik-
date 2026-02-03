@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب الخدمة - TopUpEs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0c0c0c;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 2.5rem;
+            background: #161616;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            max-width: 420px;
+            width: 90%;
+            border: 1px solid #222;
+        }
+        .diamond { font-size: 60px; margin-bottom: 20px; }
+        h1 { font-size: 1.6rem; margin-bottom: 15px; color: #fff; }
+        p { font-size: 1rem; color: #999; margin-bottom: 35px; line-height: 1.6; }
+
+        /* تعديل لضمان ظهور الزر حتى لو تأخر السكريبت */
+        .rmz-btn-container {
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button[data-rmz-product] {
+            display: inline-block !important;
+            visibility: visible !important;
+            min-width: 200px;
+            font-family: 'Tajawal', sans-serif !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="diamond">💎</div>
+        <h1>طلب الخدمة السريع</h1>
+        <p>بمجرد الضغط على الزر، ستفتح لك نافذة الدفع الآمنة من "رمز" لإتمام طلبك فوراً.</p>
+
+        <div class="rmz-btn-container">
+            <script src="https://embed-js.rmz.gg/rmz-embed.js"></script>
+            <button 
+                data-rmz-product="3224" 
+                data-rmz-key="rmz_pk_545_5wbUS0CPHrwbmDbc7nQultpb" 
+                data-rmz-theme="dark" 
+                data-rmz-config='{"primaryColor":"#0c704f","accentColor":"#7f1046","borderRadius":16,"buttonStyle":"gradient"}'>
+                شراء الخدمة
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
